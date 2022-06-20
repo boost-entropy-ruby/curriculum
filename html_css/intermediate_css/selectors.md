@@ -98,7 +98,7 @@ These types of useful pseudo-classes can make your page feel much more dynamic a
 
 [`:focus`](https://css-tricks.com/almanac/selectors/f/focus/) applies to an element that is currently selected by the user either through selecting it with their cursor or using their keyboard.
 
-<span id="hover-active-knowledge-check">[`:hover`](https://css-tricks.com/almanac/selectors/h/hover/) will affect anything under the users mouse pointer.</span> It can be used to give extra oomph to buttons and links to highlight that they're interactable, or to trigger a drop down menu.
+<span id="hover-active-knowledge-check">[`:hover`](https://css-tricks.com/almanac/selectors/h/hover/) will affect anything under the user's mouse pointer.</span> It can be used to give extra oomph to buttons and links to highlight that they're interactable, or to trigger a drop down menu.
 
 [`:active`](https://css-tricks.com/almanac/selectors/a/active/) applies to elements that are currently being clicked, and is especially useful for giving your user feedback that their action had an effect. This is a great one to give your buttons and other interactive elements more 'tactile' feedback.
 
@@ -135,13 +135,13 @@ Similarly [`:empty`](https://css-tricks.com/almanac/selectors/e/empty/) will mat
 For a more dynamic approach we can use <span id="second-child-knowledge-check">[`:nth-child`](https://css-tricks.com/almanac/selectors/n/nth-child/).</span> This is a flexible pseudo-class with a few different uses.
 
 ~~~css
-  .myList:nth-child(5) {/* Selects the 5th child of myList */}
+  .myList:nth-child(5) {/* Selects the 5th element with class myList */}
 
-  .myList:nth-child(3n) { /* Selects every 3rd child of myList */}
+  .myList:nth-child(3n) { /* Selects every 3rd element with class myList */}
 
-  .myList:nth-child(3n + 3) { /* Selects every 3rd child of myList, beginning with the 3rd */}
+  .myList:nth-child(3n + 3) { /* Selects every 3rd element with class myList, beginning with the 3rd */}
 
-  .myList:nth-child(even) {/* Selects every even child of myList */}
+  .myList:nth-child(even) {/* Selects every even element with class myList */}
 ~~~
 
 ### Pseudo-elements
@@ -150,6 +150,8 @@ While pseudo-classes give us an alternative way to interact with our HTML elemen
 [`::marker`](https://css-tricks.com/almanac/selectors/m/marker/) allows you to customize the styling of your `<li>` elements' bullets or numbers.
 
 [`::first-letter`](https://css-tricks.com/almanac/selectors/f/first-letter/) and [`::first-line`](https://css-tricks.com/almanac/selectors/f/first-line/) allow you to (you guessed it!) give special styling to the first letter or line of some text.
+
+[`::selection`](https://css-tricks.com/almanac/selectors/s/selection/) allows you to change the highlighting when a user selects text on the page.
 
 [`::before` and `::after`](https://css-tricks.com/almanac/selectors/a/after-and-before/) allow us to add extra elements onto the page with CSS, instead of HTML. Using it to decorate text in various ways is one common use case.
 
@@ -172,8 +174,6 @@ While pseudo-classes give us an alternative way to interact with our HTML elemen
 Using these pseudo-elements this way would give us this result:
 
 Let's 😎 🥸 🤓 emojify 🤓 🥸 😎 this span!
-
-[`::selection`](https://css-tricks.com/almanac/selectors/s/selection/) allows you to change the highlighting when a user selects text on the page.
 
  There are lots more! Have a quick browse through the [pseudo-element docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) to see a complete list of what's possible.
 
